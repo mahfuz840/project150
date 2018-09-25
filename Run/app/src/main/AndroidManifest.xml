@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.the_spartan.myapplication">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:maxSdkVersion="22" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.the_spartan.run.volley.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/run_icon"
+        android:label="Run"
+        android:roundIcon="@drawable/run_icon"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name="com.the_spartan.run.MainActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.the_spartan.run.activities.HomeActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.the_spartan.run.activities.RankingActivity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.the_spartan.run.activities.ProfileActivity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.the_spartan.run.activities.TipsActivity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.the_spartan.run.activities.Speedometer"
+            android:noHistory="true" />
+        <activity
+            android:name="com.the_spartan.run.Speedo"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.the_spartan.run.activities.CompleteFormActivity"
+            android:parentActivityName="com.the_spartan.run.activities.HomeActivity"
+            android:noHistory="true"></activity>
+    </application>
+
+</manifest>
