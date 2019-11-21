@@ -1,0 +1,18 @@
+body { 
+background: url(images/9657a1b71bdd316.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+.hi{background-color: #4d3868;}
+a:hover{
+    text-decoration: none;
+
+    font-size: 19px;
+  
+font-family: fantasy;
+}
+a{font-family: Comic Sans Ms;
+}
